@@ -20,8 +20,9 @@ bot.on('events', e => console.dir(e))
 // on Message event
 bot.on('message', m =>{
   console.log('received text: ' + m.message.text);
-  console.log('is whereami: ' + m.message.text == 'whereami' + '   ' + m.message.text === 'whereami');
-  if(m.message.text === 'whereami'){
+  console.log('is text: ' + new String(m.message.type) === 'text');
+  console.log('is whereami: ' + m.message.text == 'whereami');
+  if((new String(m.message.type) === 'text') && (new String(m.message.text) === 'whereami')){
     const msgs = new Messages();
     msgs.addText(m.source);
     bot.replyMessage(m.replyToken,msgs.commit());
