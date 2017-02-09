@@ -3,7 +3,7 @@ import Bot, { Messages } from 'node-line-messaging-api';
 const SECRET = process.env.LINE_SECRET || ''; // Line@ APP SECRET
 const TOKEN = process.env.LINE_TOKEN || ''; // Line@ issued TOKEN
 
-const PORT = process.env.PORT || 3002
+const PORT = process.env.PORT || 3002;
 
 console.log('LINE API SETTINGS');
 console.log('SECRET: ' + SECRET);
@@ -19,12 +19,10 @@ bot.on('events', e => console.dir(e))
 
 // on Message event
 bot.on('message', m =>{
-  console.log(m);
+  if(m.message.contains('whereami')){
+    let msgs = new Messages();
+    msgs.addText(m.source);
+    bot.replyMessage(m.replyToken,msgs.commit());
+  }
 }
 );
-
-let msgs = new Messages()
-
-//msgs.addText('HELLO WORLD!').addText({text: 'harambe4lyf'})
-
-//bot.pushMessage('CHANNELXXXXXXXX', msgs.addText('FOO BAR BAZ').commit()) // HELLO WORLD! -- harambe4lyf -- FOO BAR BAZ
