@@ -19,7 +19,7 @@ bot.on('events', e => console.dir(e))
 
 // on Message event
 bot.on('message', m =>{
-  console.log('received text: ' + m.message.text);
+  console.log('received m: ' + m);
   console.log('is text: ' + new String(m.message.type) === 'text');
   console.log('is whereami: ' + m.message.text == 'whereami');
   if((new String(m.message.type) === 'text') && (new String(m.message.text) === 'whereami')){
