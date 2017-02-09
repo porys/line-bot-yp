@@ -19,7 +19,7 @@ bot.on('events', e => console.dir(e))
 
 // on Message event
 bot.on('message', m =>{
-  if((m.type.toString() == "text") && (m.message.text.toString() == "whereami")){
+  if((m.message.type.toString() == "text") && (m.message.text.toString() == "where")){
     const msgs = new Messages();
     msgs.addText(m.source);
     bot.replyMessage(m.replyToken,msgs.commit());
