@@ -1,0 +1,20 @@
+{
+  "name": "line-bot-node",
+  "version": "1.0.0",
+  "description": "Simple Line Bot",
+  "main": "app.js",
+  "scripts": {
+    "start": "./node_modules/.bin/babel-node --presets es2015 app.js"
+  },
+  "author": "Paul Jung",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "ngrok": "^2.2.6",
+    "node-line-messaging-api": "^0.11.1"
+  },
+  "engines": {
+    "node": "4.4.6"
+  }
+}
