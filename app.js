@@ -19,9 +19,9 @@ bot.on('events', e => console.dir(e))
 
 // on Message event
 bot.on('message', m =>{
-  console.log('received m: ' + m);
-  console.log('is text: ' + new String(m.message.type) === 'text');
-  console.log('is whereami: ' + m.message.text == 'whereami');
+  console.log('received m: ' + m.text + ' ' + m.type);
+  console.log('is text: ' + new String(m.type) === 'text');
+  console.log('is whereami: ' + m.text == 'whereami');
   if((new String(m.message.type) === 'text') && (new String(m.message.text) === 'whereami')){
     const msgs = new Messages();
     msgs.addText(m.source);
