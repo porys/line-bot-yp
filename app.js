@@ -1,13 +1,13 @@
-import Bot, { Messages } from 'node-line-messaging-api';
+import Bot, { Messages } from 'node-line-messaging-api'
 
-const SECRET = process.env.LINE_SECRET || ''; // Line@ APP SECRET
-const TOKEN = process.env.LINE_TOKEN || ''; // Line@ issued TOKEN
+const SECRET = process.env.LINE_SECRET || '' // Line@ APP SECRET
+const TOKEN = process.env.LINE_TOKEN || '' // Line@ issued TOKEN
 
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3002
 
-console.log('LINE API SETTINGS');
-console.log('SECRET: ' + SECRET);
-console.log('TOKEN: ' + TOKEN);
+console.log('LINE API SETTINGS')
+console.log('SECRET: ' + SECRET)
+console.log('TOKEN: ' + TOKEN)
 
 let bot = new Bot(SECRET, TOKEN, { webhook: { port: PORT } })
 
@@ -18,11 +18,5 @@ bot.on('webhook', w => console.log(`bot listens on port ${w}.`))
 bot.on('events', e => console.dir(e))
 
 // on Message event
-bot.on('message', m =>{
-  if((m.message.type.toString() == "text") && (m.message.text.toString() == "where")){
-    const msgs = new Messages();
-    msgs.addText(m.source);
-    bot.replyMessage(m.replyToken,msgs.commit());
-  }
-}
+bot.on('message', m => console.log('m.message')
 );
