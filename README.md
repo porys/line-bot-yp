@@ -26,3 +26,7 @@ Tap the **Manage App** button and copy the name of your Heroku instance.
 
 Set the webhook URL for your Channel on the Channel Console using the following URL:
 `https://${YOUR_HEROKU_APP_NAME}.herokuapp.com/`
+
+### Step 6
+
+Use Heroku Logs to identify and monitor Ids and requests 
