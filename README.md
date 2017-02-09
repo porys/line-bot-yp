@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This helps developers to create their own callback server on Heroku for LINE Messaging API
+This helps developers to create their own callback server on Heroku for LINE Messaging API<br>
 inspired by mathdroid's node-line-messaging-api(https://github.com/mathdroid/node-line-messaging-api)
 
 ## How to deploy on Heroku
@@ -12,7 +12,7 @@ Get Channel Secret and Channel Access Token from LINE developers page.
 
 ### Step 2 
 Tap the deploy button below.
-
+<br>
 (https://heroku.com/deploy?template=https://github.com/porys/line-bot-yp)
 
 ### Step 3
