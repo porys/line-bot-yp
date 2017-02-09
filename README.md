@@ -3,6 +3,7 @@
 ## What is this?
 
 This helps developers to create their own callback server on Heroku for LINE Messaging API
+inspired by mathdroid's node-line-messaging-api(https://github.com/mathdroid/node-line-messaging-api)
 
 ## How to deploy on Heroku
 
