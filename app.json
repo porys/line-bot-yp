@@ -1,5 +1,5 @@
 {
-    "name": "Simple Callback Bot - LINE Messaging API",
+    "name": "LINE Messaging API Bot",
     "description": "This is simple LINE Messaging API callback bot to get Ids and watch requests",
     "keywords": ["chatbot", "line", "node"],
     "env": {

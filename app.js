@@ -1,3 +1,4 @@
+// https://heroku.com/deploy?template=https://github.com/porys/line-bot-yp
 import Bot, { Messages } from 'node-line-messaging-api'
 
 const SECRET = process.env.LINE_SECRET || '' // Line@ APP SECRET
