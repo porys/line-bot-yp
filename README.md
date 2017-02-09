@@ -13,7 +13,7 @@ Get Channel Secret and Channel Access Token from LINE developers page.
 ### Step 2 
 Tap the deploy button below.
 <br>
-(https://heroku.com/deploy?template=https://github.com/porys/line-bot-yp)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/porys/line-bot-yp)
 
 ### Step 3
 
